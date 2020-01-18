@@ -9,6 +9,7 @@ const dependencies = [
 ];
 
 //register dependencies with container
+//Todo extract the callback function to a named method (as those methods can be seen in stacktrace and helps in readability)
 dependencies.forEach(function(val) {
     container.register(val[0], function(){
         return require(val[1]);

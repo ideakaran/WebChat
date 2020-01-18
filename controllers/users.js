@@ -1,10 +1,8 @@
 'use strict';
 
-
 module.exports = function(_){
-
     return {
-        SetRouting: function(router) {
+        setRouting: function(router) {
             //route to index path
             router.get('/', this.indexPage);
         }, 

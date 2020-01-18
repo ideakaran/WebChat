@@ -19,7 +19,7 @@ container.resolve(function(users){
 
         //Setup router
         const router = require('express-promise-router')();
-        users.SetRouting(router);
+        users.setRouting(router);
 
         app.use(router);
     }
