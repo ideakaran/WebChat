@@ -5,10 +5,15 @@ module.exports = function(_){
         setRouting: function(router) {
             //route to index path
             router.get('/', this.indexPage);
+            router.get('/signup', this.getSignUp)
         }, 
 
         indexPage: function(req, res) {
-            return res.render('index', {test: 'This is a test'});
+            return res.render('index');
+        },
+
+        getSignUp: function(req, res) {
+            return res.render('signup');
         }
     }
 }
